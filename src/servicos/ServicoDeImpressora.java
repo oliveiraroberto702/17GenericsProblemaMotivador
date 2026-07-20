@@ -5,13 +5,13 @@ import java.util.List;
 
 public class ServicoDeImpressora {
 	
-	List<Integer> lista = new ArrayList<>();
+	List<Object> lista = new ArrayList<>();
 	
-	public void entraValor(Integer valor) {
+	public void entraValor(Object valor) {
 		lista.add(valor);
 	}
 	
-	public Integer primeiro()   {
+	public Object primeiro()   {
 		if(lista.isEmpty()) {
 			throw new IllegalStateException("List está vazia");
 		}
